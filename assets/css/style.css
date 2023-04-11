@@ -1,5 +1,7 @@
-/* font-family: 'Abril Fatface', cursive;
-font-family: 'IBM Plex Mono', monospace; */
+/* 
+font-family: 'Abril Fatface', cursive;
+font-family: 'IBM Plex Mono', monospace; 
+*/
 :root{
     --purple: #662d91;
     --lightpurple: #7738af;
@@ -57,7 +59,7 @@ header {
 main {
     width: 100%;
     height: 100%;
-    min-height: 89vh;
+    min-height: 91vh;
 }
 
 footer {
@@ -75,7 +77,7 @@ footer {
     justify-content: center;
 }
 
-/* Home classes ------- START*/
+/* Home page ------- START*/
 
 .section1 {
     display: flex;
@@ -146,9 +148,9 @@ footer {
     padding-bottom: 10px;
 }
 
-/* Home classes ------- END*/
+/* Home page ------- END*/
 
-/* Projects classes ------- START*/
+/* Projects page ------- START*/
 
 .projects-container1 {
     display: flex;
@@ -165,7 +167,7 @@ footer {
 
 .card {
     width: 350px;
-    min-width: 350px;
+    min-width: 280px;
     background-color: white;
     padding: 1rem 1rem 0 1rem;
     border-radius: 10px;
@@ -233,4 +235,102 @@ footer {
     width: 30px;
 }
 
-/* Projects classes ------- END*/
+/* Projects page ------- END*/
+
+/* Media Queries TABLET ---------- START */
+
+@media screen and (max-width: 919px) {
+
+    /* Home page ------- START*/
+
+    main {
+        min-height: 92vh;
+    }
+
+    /* Home page ------- END*/
+
+    /* Projects page ------- START*/
+
+    .projects-container1 {
+        flex-direction: column;
+    }
+
+    .projects-container2 {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 500px;
+    }
+
+    .card-techs {
+        width: 32%;
+    }
+
+/* Projects page ------- END*/
+}
+
+/* Media Queries TABLET ---------- END */
+
+/* Media Queries SMARTPHONE ---------- START */
+
+@media screen and (max-width: 599px){
+
+/* Home page ------- START*/
+
+    .avatar {
+        width: 100px;
+        height: auto;
+        margin-right: 10px;
+    }
+
+    .name {
+        font-size: 2.2rem;
+    }
+
+    .location {
+        font-size: 0.9rem;
+    }
+
+    .container2 {
+        width: 60%;
+    }
+
+    .skills {
+        font-size: 1rem;
+    }
+
+    .techs {
+        font-size: 1rem;
+    }
+
+    .techs .techs-title {
+        font-size: 2rem;
+    }
+
+    .footer {
+        height: 50px;
+    }
+
+    .text-footer {
+        padding: 0 15px;
+        text-align: center;
+    }
+
+/* Home page ------- END*/
+
+/* Projects page ------- START*/
+
+    .card {
+        width: 80%;
+    }
+
+    .card-techs {
+        width: 52%;
+    }
+
+/* Projects classes ------- START*/
+
+}
+
+/* Media Queries SMARTPHONE ---------- END */
