@@ -1,0 +1,450 @@
+:root{
+    --black: #000;
+    --darkgray: #222326;
+    --gray: #919496;
+    --white: #fff;
+    --green: #1ed760;    
+    --blue: #2941ab;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.padding-hor{
+    padding: 0 20px;
+}
+
+header {
+    background-color: var(--black);
+}
+.header {
+    display: flex;
+    align-items: center;
+    background-color: var(--black);
+    height: 54px;
+    width: 100%;
+}
+
+.logo {
+    margin-right: auto;
+    width: 89px;
+}
+
+/* MENU BUTTON -------------- START */
+
+.menu-button {
+    display: flex;
+    margin-left: auto;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 2;
+  }
+  
+  .menu-line {
+    width: 25px;
+    height: 3px;
+    background-color: var(--white);
+    position: absolute;
+    left: 2.5px;
+    transition: transform 0.3s;
+  }
+  
+  .menu-line:nth-child(1) {
+    top: 4px; /* ajusta a posição da linha */
+  }
+  
+  .menu-line:nth-child(2) {
+    top: 12.5px; /* ajusta a posição da linha */
+  }
+  
+  .menu-line:nth-child(3) {
+    top: 20px; /* ajusta a posição da linha */
+  }
+  
+.menu-button.active .menu-line:nth-child(1) {
+    transform: rotate(45deg) translate(5.5px, 5.5px);
+}
+
+.menu-button.active .menu-line:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-button.active .menu-line:nth-child(3) {
+    transform: rotate(-45deg) translate(5.5px, -5.5px);
+}
+
+/* MENU BUTTON -------------- END */
+
+/* MENU MOBILE -------------- START */
+
+#menu {
+    display: none;
+}
+
+#menu.active {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+    height: 101vh;
+    top: 0;
+    right: 0;
+    background-color: var(--black);
+}
+
+.menu-list {
+    color: var(--white);
+    padding: 40px 0 0 30px;
+}
+
+.item-1 {
+    font-size: 2rem;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.item-2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.item-1:hover {
+    color: var(--green);
+}
+
+.item-2:hover {
+    color: var(--green);
+}
+
+.separator-menu {
+    width: 20px;
+    height: 2px;
+    background-color: var(--white);
+    margin: 20px 0;
+}
+
+.menu-logo {
+    margin-top: auto;
+    width: 89px;
+    padding: 0 0 50px 30px;    
+}
+
+/* MENU MOBILE -------------- END */
+
+/* MAIN CONTENT -------------- START */
+
+.section {
+    width: 100%;
+    height: 94vh;
+    overflow: hidden;
+    background-color: var(--blue);
+}
+
+.main-content {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../imgs/circles_mobile.svg');
+    background-size: 215%;
+    background-position: center top 40%;
+    background-repeat: no-repeat;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.main-box{        
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.main-h1 {
+    width: 312px;
+    height: auto;
+}
+
+.main-h1 h1 {
+    font-size: 3rem;
+    color: var(--green);
+    text-align: center;
+    letter-spacing: -2px;
+}
+
+.main-p {
+    width: 312px;
+    padding: 24px;
+}
+
+.main-p p{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--green);
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.download-button {
+    background-color: var(--green);
+    width: 217px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--blue);
+    border-radius: 30px;
+    padding: 15px 30px 15px;
+}
+
+/* MAIN CONTENT -------------- END */
+
+/* FOOTER -------------- START */
+
+footer {
+    background-color: var(--black);
+}
+
+.logo-footer {
+    width: 89px;
+}
+
+
+.list-title {
+    font-family: 'Quicksand', sans-serif;
+    color: var(--gray);
+    padding: 50px 0 15px;
+}
+
+.list-item {
+    font-weight: 400;
+    color: var(--white);
+    padding: 0 0 15px;
+}
+
+.social {
+    padding: 50px 0;
+}
+
+.social ul li {
+    display: inline-block;
+    background-color: var(--darkgray);
+    width: 54px;
+    border-radius: 30px;
+    color: var(--white);
+    font-size: 24px;
+    text-align: center;
+    margin-right: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.footer-box {
+    display: inline-block;
+    padding: 50px 0;
+}
+
+.bottom-footer{
+    display: flex;
+    flex-direction: row;   
+}
+.footer-left {
+    width: 50%;
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+.footer-right {
+    float: right;
+    width: 50%;
+}
+.footer-right1 {
+    float: right;
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+.footer-right2 {
+    float: right;
+    text-align: right;
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+.footer-right2 a {
+    font-weight: 500;
+    color: var(--green);
+}
+
+/* FOOTER -------------- END */
+
+@media screen and (min-width: 515px){
+
+    /* MAIN CONTENT -------------- START */
+
+    .main-content {
+        background-image: url('../imgs/circles_tablet.svg');
+        background-size: 153%;
+        background-position: right 40% center;
+        background-repeat: no-repeat;
+    }
+
+    .main-h1 {
+        width: 600px;
+    }
+
+    .main-h1 h1 {
+        font-size: 5rem;
+    }
+
+    /* MAIN CONTENT -------------- END */
+
+     /* FOOTER -------------- START */
+
+    .table {
+        display: flex;
+        justify-content:space-evenly;
+    }
+
+    .table ul {
+        padding: 0 20px;
+    }
+
+    .footer-box {
+        width: 100%;
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+    }
+
+    .bottom-footer {
+        display: block;
+    }
+
+    .footer-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .footer-left ul {
+        display: flex;
+    }
+
+    .footer-left ul li {
+        padding: 0 20px 0;
+    }
+
+    .footer-right {
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer-right1 {
+        display:flex;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    .footer-right2 {
+        display:flex;
+        justify-content: center;
+    }
+
+    /* FOOTER -------------- END */
+}
+
+@media screen and (min-width: 1024px) {
+
+    /* HEADER -------------- START */
+
+        .header {
+        justify-content: space-around;
+        max-width: 984px;
+        height: 80px;
+        margin: 0 auto;
+    }
+
+    .logo {
+        width: 131px;
+        margin-right: 0;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .menu-logo {
+        display: none;
+    }
+
+    #menu {
+        display: flex;
+    }
+    
+    .menu-list {
+        display: flex;
+        padding: 0;
+    }
+    
+    .item-1 {
+        font-size: 0.9rem;
+        font-weight: 700;
+        padding-bottom: 0;
+        padding-left: 40px;
+    }
+    
+    .item-2 {
+        font-size: 0.9rem;
+        font-weight: 700;
+        padding-top: 0;
+        padding-left: 40px;
+    }
+
+    .separator-menu {        
+        width: 2px;
+        height: 16px;
+        background-color: var(--white);
+        margin: 0;
+        margin-left: 40px;  
+    }
+
+    /* HEADER -------------- END */
+
+    /* MAIN CONTENT -------------- START */
+
+    .main-content {
+        background-image: url('../imgs/circles.svg');
+        background-size: 175%;
+        background-position: 46% 4%;
+        background-repeat: no-repeat;
+    }
+
+    .main-h1 {
+        width: 800px;
+    }
+
+    .main-h1 h1 {
+        font-size: 7rem;
+    }
+
+    /* MAIN CONTENT -------------- END */
+}
