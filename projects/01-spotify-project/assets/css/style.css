@@ -41,7 +41,6 @@ header {
     height: 25px;
     position: relative;
     cursor: pointer;
-    display: flex;
     justify-content: space-evenly;
     z-index: 2;
   }

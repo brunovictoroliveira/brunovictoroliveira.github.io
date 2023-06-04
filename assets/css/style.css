@@ -214,6 +214,11 @@ footer {
     height: 30px;
 }
 
+.tech-logo-react {
+    width: 50px;
+    border-radius: 50%;
+}
+
 .github-button {
     display: flex;
     align-items: center;
