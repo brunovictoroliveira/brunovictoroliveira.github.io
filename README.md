@@ -26,3 +26,8 @@ Principais Funcionalidades:
 
 - Troca de Idioma: Os botões de idioma indicam o idioma ativo com uma diferenciação de cor nas bandeiras (colorida para ativo, escala de cinza para inativo). Isso permite a mudança rápida de idioma com um único clique ou toque.
 
+## Telas Dekstop / Mobile (dark / light theme)
+
+![desktop version](https://github.com/user-attachments/assets/2af7b85e-5efb-41b4-b39d-e1ffa520c770)
+
+![mobile screens](https://github.com/user-attachments/assets/20572c27-085b-4ae7-872d-8a01b608eea1)
