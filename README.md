@@ -1,6 +1,6 @@
 # Portfólio em React
 ## Aplicação Web desenvolvida com React, JavaScript, Vite, React Router DOM, i18next e EmailJS.
-Link do portfólio: https://brunovictorlima.github.io
+Link do portfólio: https://brunovictoroliveira.github.io
 
 ### Este projeto é uma aplicação web responsiva criada com o objetivo de apresentar um portfólio de maneira moderna e intuitiva. Abaixo estão os principais recursos e tecnologias utilizados:
 
